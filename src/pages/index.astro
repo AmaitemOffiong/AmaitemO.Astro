@@ -1,167 +1,54 @@
+---
+import "../styles/global.css";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import Features from "../components/Features.astro";
+import PageContent from "../components/PageContent.astro";
+import Semesters from "../components/Semesters.astro";
+
+
+
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Theme Build For Astro</title>
-<style>
-:root
-{
---color-primary:red;
---color-secondary:blue;
-}
-html
-{
-font-size:62.5%;
-/* Allows you to use rems instead of pixels for sizing */
-/*
-.5rem = 5px
-1rem = 10px
-1.6rem = 16px
-2rem = 20px
-6rem = 60px
-*/
-}
 
-
-/* Brower Reset */
-*,*::before,*::after{
-    margin:0 ;
-    padding:0 ;
-    box-sizing: border-box;
-}
-/* easy pixel cal with rem units */
-body
-{
-font-size:1.6rem;
-}
-
-/* fix browswer on macs */
-body{
-
-    overflow: auto;
-    width: 100%;
-    overscroll-behavior: none;
-}
-
-#pageheader{
-    min-height: 200px;
-    background-color: pink;
-    padding: 1rem;
-}
-
-#showcase{
-    min-height: 200px;
-    background-color: rgb(154, 56, 73);
-    padding: 1rem;
-}
-
-#features{
-    min-height: 200px;
-    background-color: rgb(198, 27, 56);
-    padding: 1rem;
-}
-
-
-#pagecontent{
-    min-height: 200px;
-    background-color: rgb(174, 144, 149);
-    padding: 1rem;
-}
-
-
-
-#semesters{
-    min-height: 200px;
-    background-color: rgb(247, 234, 236);
-    padding: 1rem;
-}
-
-
-#pagefooter{
-    min-height: 200px;
-    background-color: rgb(202, 132, 143);
-    padding: 1rem;
-}
-
-/* Media Queries */
-@media only screen and (min-width:320px)
-{
-body
-{
-background-color: magenta;
-}
-}
-@media only screen and (min-width:480px)
-{
-body
-{
-background-color: yellow;
-}
-}
-@media only screen and (min-width:768px)
-{
-body
-{
-background-color: lime;
-}
-}
-@media only screen and (min-width:1024px)
-{
-body
-{
-background-color: coral;
-}
-}
-@media only screen and (min-width:1200px)
-{
-body
-{
-background-color: steelblue;
-}
-}
-</style>
 </head>
-<body>
-<!-- 
-pageheader 
+<>
+<!--
+pageheader
 showcase
 features
-page-content
-semsters
+pagecontent
+semesters
 pagefooter
-
- -->
-
-
- <!-- Make pageheader -->
-<header id="pageheader">
-    pageheader
-
-</header>
-<!-- header#pageheader{pageheader} -->
-<section id="showcase">
-    showcase
-
-</section>
-  <!-- End pageheader -->
-  <section id="features">features
-
-  </section>
-
-  <main id="pagecontent">pagecontent
-
-  </main>
-
-  <section id="semesters">semeters
-
-  </section>
+-->
 
 
-  <footer id="pagefooter">pagefooter
 
-  </footer>
 
+
+<PageHeader />
+
+<!-- Begin Showcase -->
+<section id="showcase">showcase</section>
+<!-- End Showcase -->
+
+<Features />
+
+
+<PageContent />
+
+
+<Semesters />
+
+
+<PageFooter />
 
 </body>
 </html>
