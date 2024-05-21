@@ -1,13 +1,89 @@
----
-
----
+<!-- Pagecontent Section -->
 
 
-<!-- Begin Pagecontent -->
-<main id="pagecontent">
-    pagecontent
-    
-    <div class="container"></div>
-    <!-- End Container -->
-    </main>
+<div id="pagecontent">
+    <div class="container">
+        <div class="intro">
+            <h2>Introduction</h2>
+            <p>
+                My name is Amaitem. I am a web developer based in Coalinga, California. I enjoy technology and I love to learn about science, math, and underwater basket weaving. I am also about to complete the Web Technologies Pathway at Coalinga High School.
+            </p>
+        </div>
+
+        <h3>Career</h3>
+        <p>
+            My goal is to become a data scientist. My goal is to utilize my passion for math and technology.
+        </p>
+        <h3>Design</h3>
+        <p>
+            Another interest I have is art.
+            I love drawing so color theory is one aspect of design I enjoy. I also enjoy creating beyond paper and enjoy digital art. I enjoy using Photoshop.
+        </p>
+        <h3>Programming</h3>
+        <p>
+            Over the last two years I have been learning JavaScript.  I have found it interesting and challenging. I especially enjoyed using JavaScript with the HTML canvas element.
+        </p>
+    </div>
     <!-- End Pagecontent -->
+</div>
+<!-- End Pagecontent section -->
+
+
+<style>
+    /* Pagecontent Section */
+
+    #pagecontent {
+        background-color: none;
+        padding: 2rem 0;
+        border-radius: 50px dashed red;
+    }
+
+    #pagecontent h2,
+    #pagecontent h3 {
+        padding: 2rem;
+        text-align: center; /* Center aligning the headers */
+    }
+
+    #pagecontent h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #pagecontent h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    /* End Pagecontent Section Styles*/
+
+    #pagecontent .container {
+        background-color: #D495A0;
+        border: 2px dashed red;
+        border-radius: 50px;
+        transition: transform 0.3s ease; /* Adding transition to the container */
+    }
+
+    #pagecontent:hover .container {
+        transform: translateY(-10px); /* Move the container up slightly on hover */
+    }
+
+    #pagecontent p {
+        padding: 1rem;
+        opacity: 0; /* Initially hide the paragraphs */
+        transition: opacity 0.3s ease; /* Adding transition to paragraph opacity */
+        text-align: center;
+        color:white
+    }
+
+    #pagecontent:hover p {
+        opacity: 1; /* Make paragraphs visible on hover */
+    }
+
+    .intro {
+        border: 2px dashed red;
+        border-radius: 50px;
+    }
+
+    
+</style>
+

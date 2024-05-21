@@ -1,24 +1,94 @@
----
-
----
-
-<!-- Showcase Section --> 
-
+<!-- Begin Section --> 
 <section id="showcase">
-<div id="showcasetext">
-<h1>Amaitem Ofifong</h1>
-<h2>Portfolio</h2>
-<blockquote> It always seems impossible until it is done. - Nelson Mandela </blockquote>
-</div>
+     <div id="showcasetext">
+            <h1>Amaitem Offiong</h1>
+            <h2>Portfolio</h2>
 
-<div id="showcaseimage">
-<img src="Images/technologiesbig.png" alt="Technologies" id="logosbig">
-<img src="Images/technologiessmall.png" alt="Technologies" id="logossmall">
-</div>
+            <blockquote>It always seems impossible until it is done.- Nelson Mandela</blockquote>
+        
+        </div>
 
-<p id="showcaseintro">
-This is a showcase of my web design/development work.
-</р>
+
+
+        <div id="showcaseimage">
+            <img src="Images/technologiesbig2.png" alt="Technologies" id="logosbig">
+        </div>
+
+
+        <p id="showcaseintro">
+            This is a showcase of my website designs, projects, and other web development work.
+        </p>
+</section>
 
 <!-- End Showcase Section -->
+<style>
 
+   
+/* Showcase Section Styles */
+blockquote::before {
+    font-size: 64px;
+    content: "“";
+}
+
+blockquote::after {
+    font-size: 64px;
+    content: "”";
+}
+#showcase 
+{
+    border:90rem solid none;
+    background-color:var(--color-primary);
+    padding:3rem;
+    background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+    background-image: url(/Images/background1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: bottom left;
+}
+
+#showcasetext 
+{
+    border:.2rem solid none;
+    color:#fff;
+    text-align: center;
+    margin:5rem auto;
+    max-width:60rem;
+}
+
+#showcase h1
+{
+    font-size:5rem; /* 50px */
+    margin-bottom:2rem; /* 20px */
+    text-shadow: 0 0 1rem black;
+}
+
+#showcase blockquote 
+{
+    font-size:2.4rem;
+    margin-bottom:2rem;
+}
+
+#showcaseimage 
+{
+    text-align: center;
+    /* Cheating */
+}
+#showcaseimage img 
+{
+    border-radius:1rem;
+    margin: auto; /* Needed? */
+}
+#showcaseintro 
+{
+    color:#fff;
+    text-align: center;
+    font-size: 3rem;
+}
+/* Hide Big Logos/Technologies for Mobile */
+#logosbig {
+  width:90rem; 
+}
+
+/* End of Showcase Section Styles */
+</style>
